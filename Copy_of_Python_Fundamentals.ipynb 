@@ -1,0 +1,988 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Copy of Python_Fundamentals.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.6.8"
+    },
+    "nbTranslate": {
+      "displayLangs": [
+        "*"
+      ],
+      "hotkey": "alt-t",
+      "langInMainMenu": true,
+      "sourceLang": "en",
+      "targetLang": "fr",
+      "useGoogleTranslate": true
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/anoushkabhat13/UCLA_Splash_2020_Tutorial_Resources/blob/master/Copy_of_Python_Fundamentals.ipynb%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "QedF985a914Z"
+      },
+      "source": [
+        "<br></br>\n",
+        "<h1 style=\"text-align:center;\">Python Fundamentals</h1>\n",
+        "\n",
+        "![test](https://raw.githubusercontent.com/someone20dz/UCLA_Splash_2020_Tutorial_Resources/master/M196/python_fund/images/1_b3sa3Kkdyv4diV26-DzdPQ.png)\n",
+        "\n",
+        "<h2>Table of Contents</h2>\n",
+        "\n",
+        "<h4>1. Introduction to Programming </h4>\n",
+        "\n",
+        "<h4>2. What is a Programming Language?\n",
+        "\n",
+        "<h4>3. The Importance of Computing in Communication\n",
+        "\n",
+        "<h4>4. Introduction to Python</h4>\n",
+        "\n",
+        "<h4>5. Python Characteristics and Features</h4>\n",
+        "\n",
+        "<h4>6. Introduction to Python Basics (Variables)</h4>\n",
+        "\n",
+        "<h4>7. Basic Operations With Numbers</h4>\n",
+        "\n",
+        "\n",
+        "<h4>8. Examples with Code Snippets</h4>\n",
+        "\n",
+        "<h2>1. Introduction to Programming </h2>\n",
+        "\n",
+        "<h3>\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "Steve Jobs once said \"Everybody in this country should learn how to program a computer because it teaches you how to think.\" Language has been our primary mean of communication for thousands of years. Just like how humans speak languages to communicate, programming allows people to instruct computers to perform certain tasks, or in other words, communicate with the computer. Have you ever wanted to create your own games, make an e-commerce website, analyze the latest trend in stocks, or even make a robot? Programming is a versatile tool with limitless possibilities. Programming was used to do everything from code the Amazon Alexa to create Sophia, a humanlike AI robot which can react and speak with humans. Programming is integrated into everything around us, and learning programming languages is an exciting skill and very applicable in the 21st century.\n",
+        "\n",
+        "\n",
+        "<h2> 2. What is a Programming Language?\n",
+        "\n",
+        "So what exactly is a programming language? A programming language is a computer language that people use to develop code. Python, Java, C++, and Perl are all examples of programming languages. They all have code which tell the computer what to do, but their <b>syntax</b> is a little bit different. Think of programming languages like different dialects of a language. Each dialect is a little bit different, but the same message will get across.\n",
+        "\n",
+        "\n",
+        "Let's take a look at a simple example. \n",
+        "\n",
+        "\n",
+        "In python, if you want the computer to output \"Hello world\", you would type the code:\n",
+        "   \n",
+        "   \n",
+        "           print \"Hello World\"\n",
+        "\n",
+        "\n",
+        "Whereas in Java, if you wanted the computer to output \"Hello World\", you would code:\n",
+        "\n",
+        "\n",
+        "           System.out.print(\"Hello World\");\n",
+        "  \n",
+        "\n",
+        "![testa](https://raw.githubusercontent.com/someone20dz/UCLA_Splash_2020_Tutorial_Resources/master/M196/python_fund/images/thumb-1920-679140.png)\n",
+        "\n",
+        "\n",
+        "\n",
+        "<h2> 3. The Importance of Computing in Communication\n",
+        "\n",
+        "\n",
+        "   Our world is filled with computers and their commonality is the numerical language they use to communicate (0's and 1's), and that all their functionalities and features are based on programming. When you start coding, you’ll find that it’s not much different from writing texts or emails. Code is used to communicate within many pieces of hardware and software, and this makes communication easier for many reasons, including but not limited to:\n",
+        "\n",
+        "<h4>1.  Computer communication is a useful tool in both personal and business settings.<h4>\n",
+        "<h4>2.  The ability to communicate across great distances and for an unlimited number of people.</h4>\n",
+        "<h4>4.  Enhances the availability of information</h4>\n",
+        "<h4>5.  Connects you to the Internet.</h4>\n",
+        "<h4>6.  Increase your productivity.</h4>\n",
+        "<h4>7.  Can store vast amounts of information and reduce waste.</h4>\n",
+        "<h4>8.  Helps sort, organize, and search through information.</h4>\n",
+        "<h4>9.  Helps you have a better understanding of data.</h4>\n",
+        "<h4>10. Keeps you informed</h4>\n",
+        "<h4>12. Keep you entertained</h4>\n",
+        "<h4>13. Makes file sharing easier.</h4>\n",
+        "\n",
+        "<h2> 4. Introduction to Python:</h2>\n",
+        "\n",
+        "Python is a very simple programming language, developed in the late 1980s by Guido van Rossum at the National Research Institute in Netherlands and it was released in the year 1991. Python is designed to be highly readable, meaning that it uses English keywords frequently where as other languages use punctuation, and can also program with simpler, shorter code. Python is a very good beginner programming language and can also be used for more advanced functions like creating analytical charts and arrays that are useful in data science.\n",
+        "\n",
+        "\n",
+        "<h2> 5. Python Features and characteristics</h2>\n",
+        "\n",
+        "\n",
+        "<h3>Python Features</h3>\n",
+        "--------------------------------------\n",
+        "\n",
+        "* <h3>Easy-to-learn:</h3>\n",
+        "\n",
+        "<h5>Python has a simple structure, allowing learners to pick up the language quickly and it can be easily coded. </h5>\n",
+        "\n",
+        "* <h3>Easy-to-read:</h3>\n",
+        "\n",
+        "<h5> Python code is more concise than other languages, and the visual formatting is more defined.</h5>\n",
+        "\n",
+        "* <h3>Portable:</h3>\n",
+        "\n",
+        "<h5>Python can run on a wide variety of hardware platforms and has the same interface on all of them.</h5>\n",
+        "\n",
+        "* <h3>Extendable:</h3>\n",
+        "\n",
+        "<h5>You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient. In other words, you can import small programs to Python that allow you to easily make charts, or arrays without many constraints.  </h5>\n",
+        "\n",
+        "* <h3>GUI (Graphical User Interface) Programming:</h3>\n",
+        "\n",
+        "<h5> A GUI is basically the software that user interacts with, or what you see when you open a computer program. GUI applications that can be developed using Python.</h5>\n",
+        "\n",
+        "* <h3>Large standard library:</h3>\n",
+        "\n",
+        "<h5>Python comes with a large standard library that has lot of handy codes and functions which we can use while writing code in Python.</h5>\n",
+        "\n",
+        "<h3>Python characteristics</h3>\n",
+        "---------------------------------------\n",
+        "\n",
+        "* <h3>High-level language:</h3>\n",
+        "\n",
+        "<h5>It is a high-level language used for scripting. It means one does not need to remember the system architecture or manage the memory.</h5>\n",
+        "\n",
+        "* <h3>Open source:</h3>\n",
+        "\n",
+        "<h5>Python is an open source program and readily available over the internet anywhere. One does not need to take the license of it. It can be easily downloaded and used.</h5>\n",
+        "\n",
+        "* <h3>Databases:</h3>\n",
+        "\n",
+        "<h5>Python provides interfaces to all major commercial databases. Google, Spotify, Netiflix, and Uber use Python.</h5>\n",
+        "\n",
+        "* <h3>Interpreted:</h3>\n",
+        "\n",
+        "<h5> So how does the program process the code that we write? In order for the computer to compute a simple mathematical equation like 2+2, the 2 and the 2 are specific locations in memory and it must go through a microprocessor to translate those numbers into 0's and 1's. In Python, instead of going through a microprocessor directly, the program must go through an interpreter tool first. The python language cannot operate on its own, as its interpreter tool is managed by the C language. This is why Python is slower to compile than other languages like Java and C because it has that extra step to go through. In computer terminology, Python has the highest level of abstraction, meaning that the code we write is the easiest, and is much different from what the computer compiler needs to see before processing the code, leading to the need of an interpreter tool. However, the C language has the lowest level of abstraction, meaning it is harder to code because it is more similar to the computer's compiler code, but it also processes much faster than Python and is a more independent program.</h5>\n",
+        "\n",
+        "* <h3>Platform independent:</h3>\n",
+        "\n",
+        "<h5>Python is platform independent and is universibly accessible. The python code can be used for any operating system like Windows, Unix, Linux, and Mac. There is no need to write different code for the different operating systems.</h5>\n",
+        "\n",
+        "* <h3>Interactive Mode:</h3>\n",
+        "\n",
+        "<h5>Python has support for an interactive mode which allows interactive testing and debugging (getting rid of errors) of snippets of code.</h5>\n",
+        "\n",
+        "\n",
+        "* <h3>Accessibility to Shell Scripting :</h3>\n",
+        "\n",
+        "<h5>Python provides support for large programs than shell scripting, which allows you do things like create a folder in a directory in your computer .</h5>\n",
+        "\n",
+        "<h2>6. Introduction to Python Basics</h2>\n",
+        "\n",
+        "\n",
+        "<h5>In this part we are going to cover the basics of Python coding. Let's start with variables and how to use them.</h5>\n",
+        "\n",
+        "<h5> Variables: You can think of variables like a container we can store items in. <h5\n",
+        "\n",
+        "![types](https://raw.githubusercontent.com/someone20dz/UCLA_Splash_2020_Tutorial_Resources/master/M196/python_fund/images/types.png)\n",
+        "\n",
+        "<h5> The different names of variables are like the different items in the box. In Python, we refer to each name through a type, sort of like a truncated form of the name. For example, we refer to the integer variable as type int.\n",
+        "\n",
+        "<h2>Variables Types:</h2>\n",
+        "\n",
+        "<h5><b>Integers (int) :</b>\n",
+        "\n",
+        "Whole numbers that hold one element that can be positive or negative. Examples are:\n",
+        "\n",
+        "0 , 1 , -6,  -2565 , 5656\n",
+        "\n",
+        "\n",
+        "\n",
+        "<h5><b>Floats (float) :</b>\n",
+        "\n",
+        "Decimal point numbers  which can hold one element that can be positive or negative. Examples are:\n",
+        "\n",
+        "1.0 , 6685.0  , -568.5685 , -5.59 , 23.59\n",
+        "\n",
+        "\n",
+        "\n",
+        "<h5><b>Strings (str) :</b> \n",
+        " \n",
+        "Any sequence of characters (including alphabets, letters, special characters)  enclosed in double quotation marks. Examples include:\n",
+        "\n",
+        "\"Hello\", \"2:45 is when class ends\", and \" I am learning python\"\n",
+        "\n",
+        "\n",
+        "\n",
+        "<h5><b>Booleans(bool) :</b> \n",
+        "\n",
+        "Value that refers to only True or False. This concept may be a bit confusing at first, but let's look at an example. \n",
+        "\n",
+        "bool b =  10 > 16 \n",
+        "\n",
+        "This sets the value of boolean b to false, because 10 is less than 16\n",
+        "\n",
+        "\n",
+        "<h5><b>Lists (list) : </b>\n",
+        "\n",
+        "Ordered sequence of objects. Ex:\n",
+        "\n",
+        "myList = [10,\"john\",\"10\"]\n",
+        "\n",
+        "Lists are mutable they can be altered even after their creation, meaning that more elements can be added or removed from it.\n",
+        "\n",
+        "\n",
+        "<h5><b>Dictionaries(dict)</b>: \n",
+        "\n",
+        "Collection of data values that holds a key followed by a data value. Let's look at an example:\n",
+        "\n",
+        "myDictionary = {1: \"apple\" , 2 : \"banana\", 3: \"cherry\"}\n",
+        "\n",
+        "Value of Key 1 = apple\n",
+        "\n",
+        "Value of Key 2 = banana\n",
+        "\n",
+        "Value of Key 3 = cherry\n",
+        "\n",
+        "\n",
+        "<h5><b>Tuples(tup):</b>\n",
+        "\n",
+        "Just like lists, tuples contain a sequnce of objects. However, lists use parentheses instead of square brackets and are immutable, meaning that you cannot update or change the values. (so we can't change apple , the  first element in the tuple below, to oranges)\n",
+        "\n",
+        "\n",
+        "myTuple = (\"apple\", \"banana\", \"cherry\")\n",
+        "\n",
+        "\n",
+        "<h5><b>Sets(set)</b>: \n",
+        "\n",
+        "Unordered collection of objects that cannot have duplicate values. Ex:\n",
+        "\n",
+        "mySet = {\"happy\", \"cat\"}\n",
+        "\n",
+        "\n",
+        "\n",
+        "<h5>Later,  we will cover what indexing, mutable, unmutable, iterable, uniterable means more in depth. Now, let's look at basic Python number operations.</h5>\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "<h2> 7. Basic Operations With Numbers: </h2>\n",
+        "\n",
+        "Much like the math problems you do in school, here is how you code for basic math operations on Python. \n",
+        "\n",
+        "\n",
+        "For addition use<b>  +\n",
+        "<h3>\n",
+        "      \n",
+        "      5+6 = 11\n",
+        "\n",
+        "\n",
+        "For subtraction use<b>  -\n",
+        "<h3>\n",
+        "    \n",
+        "      11-6 = 5\n",
+        "\n",
+        "For multiplication use<b>  *\n",
+        "<h3>\n",
+        "\n",
+        "      6*5 = 30\n",
+        "\n",
+        "For division use<b> /\n",
+        "<h3>\n",
+        "     \n",
+        "      30/5 = 6\n",
+        "\n",
+        "For modulus use<b> %\n",
+        " - Modulus is an operator which gives you the remainder of an integer division\n",
+        "\n",
+        "<h3>\n",
+        "\n",
+        "      10 % 3 = 1    \n",
+        "      \n",
+        "\n",
+        "- 10 /3 has a remainder of 1"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "IlU64sTMvZ0p",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h1>8. Examples With Code Snippets</h1>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Nr_j1YPrvZ0q",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h3>Example 1 (Printing):</h3>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "kACzuSv8vZ0q",
+        "colab_type": "code",
+        "outputId": "026974ca-3a95-44e1-e165-5754c02d42ac",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 52
+        }
+      },
+      "source": [
+        "#Quick tip: if you are using Jupyter or Google Colab you can use Shift + Enter to run a cell (or press the triangular run button on the top left of this cell)\n",
+        "#           if you are using pycharm you can simply do Shift + F10\n",
+        "\n",
+        "#Variables and how to use them:\n",
+        "#Example One:\n",
+        "\n",
+        "\n",
+        "myText = \"Hello World\"\n",
+        "#myText here is a reference to the String \"Hello World\". Basically, myText holds the string . \n",
+        "\n",
+        "print(myText)  \n",
+        "\n",
+        "# Print tells the computer to display what is in the parentheses. Notice that the computer does not print myText but what the variable myText holds, which is \"Hello World\"\n",
+        "\n",
+        "print(\"Hello World\")\n",
+        "# You can also directly code print(\"Hello World\"), which will display the same thing as shown in the output below.\n",
+        "\n",
+        "\n",
+        "#Quick task for you:\n",
+        "#Try and print out another String, as well as a number"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Hello World\n",
+            "Hello World\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "03ZdttbnvZ0u",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h3>Example 2 (Integers and Calculations):</h3>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "w8zrt9KXvZ0u",
+        "colab_type": "code",
+        "outputId": "b4e720a6-1432-427a-d213-396c01ff2793",
+        "colab": {}
+      },
+      "source": [
+        "#Variables and how to use them:\n",
+        "#Example Two\n",
+        "#Now we are going through integers floats and how to use simple math calculations\n",
+        "\n",
+        "# First variable hold the integer data type\n",
+        "numberOne = 10\n",
+        "# Second variable holds the float data type\n",
+        "numberTwo = 15.2\n",
+        "\n",
+        "#Now we can store the sum inside a new variable called result\n",
+        "# Instead of directly doing result = 10 + 15.2 , we can add 2 variables numberOne and numberTwo themselves , so that we change the numbers held by them if needed. \n",
+        "\n",
+        "#printing the result\n",
+        "print(result)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "25.2\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xYFNAhN4vZ0w",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h3>Example 3 (Booleans):</h3>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "8xB-B6f_vZ0w",
+        "colab_type": "code",
+        "outputId": "aceb0b77-8525-4e57-92c8-b44b9bd5e204",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        }
+      },
+      "source": [
+        "#Let's talk about booleans\n",
+        "#Booleans are just like variables but they hold either True or False value:\n",
+        "\n",
+        "#First example\n",
+        "#This is one way to check if two numbers hold the same value. In this case, it is False.\n",
+        "Number1 = 10\n",
+        "Number2 = 16\n",
+        "test = Number1  == Number2 \n",
+        "# The double equals (==) is comparing the values of Number1 and Number 2. Since they are not equal, the boolean value of test is False.\n",
+        "print(test)\n",
+        "\n",
+        "#Second example\n",
+        "#You can also set a boolean variable to True or False intially. Make sure the first letter is upperCase. \n",
+        "myBool = True      #this is not correct-->  myBool = true\n",
+        "myBool2 = False    #this is not correct-->  myBool2 = false\n",
+        "\n",
+        "#Third example\n",
+        "#Along the lines of booleans, we can also can check if two numbers hold the same value using a conditional statement\n",
+        "#A condition statement contains an if-else statement. The program will check to see if the if statement is true. If not, it will go on to the else statement, and evaluate it.\n",
+        "\n",
+        "#if this is correct do the following:\n",
+        "if Number1 == Number2:\n",
+        "#do the following if this line  is correct\n",
+        "    print(\"This is right\")\n",
+        "#else do this if the first line isn't correct  \n",
+        "else:\n",
+        "    print(\"This is wrong\")\n",
+        "\n",
+        "#Since 10 is not equal to 16 , the if statement is evaluated to false and the program doe not print \"This is right\" and moves on to the else statement, and prints what is inside it.\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "False\n",
+            "This is wrong\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "BZ30jRIJvZ0y",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h3>Example 4 (Lists, Indexing, and Slicing):</h3>\n",
+        "<h3><font color=\"Blue\">Lists In Python:</font></h3>\n",
+        "<h5>Lists are the same as arrays in other programming languages like Java, and  it allows you to store an <b>enumerated</b> set of elements in one place.(We will be dicussing more in depth what enumerate means in example 9).  </h5>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Plyaf7vtvZ0z",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h3><font color=\"Blue\">Indexing in Python:</font></h3>\n",
+        "<h5>Indexing in Python is the same as counting things in real life, the only difference is that it start at<font color=\"Red\"> Zero </font> for Python.\n",
+        "This means that in the list [6,7,4,3,4,9,8] 6 is at index 0, 7 is at index 1, 4 is at index 2 (the first index of 4), and 8 is at index 6. Indexing also allows you to access,change, and delete a single obeject in the list. (you can add 9 to the list, or change index 0 to 1 instead of 6). <h5>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uvNGBmTHvZ0z",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h3><font color=\"Blue\">Slicing in Python:</font></h3>\n",
+        "<h5>Slicing is indexing syntax that extracts a portion from a list (like taking out a sequence of words from a sentence). The structure of code for slicing will be discussed in the example below.</h5>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "CHj0hoskvZ00",
+        "colab_type": "code",
+        "outputId": "9e00d42f-d1df-41eb-b876-b863ace4e6a7",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 70
+        }
+      },
+      "source": [
+        "#Indexing \n",
+        "\n",
+        "#We defined 2 lists. The first one holds colors, and the second one holds integers. \n",
+        "\n",
+        "myListOfColors = [\"Green\",\"Blue\",\"Red\",\"Yellow\",\"Purple\"]\n",
+        "        #indexing    0      1      2      3         4\n",
+        "#reverse indexing   -5     -4     -3     -2        -1           #Reverse indexing is another form of indexing that count the last element at -1 and goes backwards from the end to the front.\n",
+        "\n",
+        "myListOfNumbers =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] #note: don't put spaces between commas this is just for the explanation\n",
+        "        #Indexing   0  1  2  3  4  5  6  7  8   9\n",
+        "#Reverse indexing -10 -9 -8 -7 -6 -5 -4 -3 -2  -1\n",
+        "\n",
+        "# Python start indexing at 0 unlike in real life which starts at 1\n",
+        "# let's try to print out the Red color which holds index of 2\n",
+        "print(myListOfColors[2])\n",
+        "# let's do the same thing with reverse indexing\n",
+        "print(myListOfColors[-3])\n",
+        "\n",
+        "#Slicing \n",
+        "\n",
+        "#Example 1\n",
+        "myStrings = \"Hello my name is python and i am a string\"\n",
+        "\n",
+        "#We have a string that holds a sentence\n",
+        "myStrings[0:23:1]\n",
+        "        #[start:Stop:StepSize]\n",
+        "        #Start is the index position where you want to start to count from\n",
+        "        #Stop is the index position where you want to stop at but is non inclusive\n",
+        "        #Do remember that stop means go up to but not including in this example we stop at index 23 so it only print 22 letters\n",
+        "        #The Step Size is how much you want to increment by. Having an increment of 2 means that you print every other index between 0 and 23. \n",
+        "        #   0    23     1\n",
+        "\n",
+        "\n",
+        "#Example 2\n",
+        "myBestString = \"A B C D E F G H I J K L M N O P Q R S T U V X Y Z\"\n",
+        "# Remember in Python the white space also hold an index (so the space after A is at index 1)\n",
+        "            #Start = index 0 = A\n",
+        "            #Stop =  index 11 = White space after the letter F \n",
+        "            #Step = Step size of 2 means that it will skip from index 0 to index 2 to index 4 (in this case eliminating the spaces).\n",
+        "print(myBestString[0:11:2])\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Red\n",
+            "Red\n",
+            "ABCDEF\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "jnUK5LN8V_WN",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h3>Example 5 (Dictionaries):</h3>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rbGAPBt0WKY_",
+        "colab_type": "code",
+        "outputId": "aea10b2d-f65c-4107-f851-8c0c7184822f",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        }
+      },
+      "source": [
+        "\n",
+        "# Dictionaries and how to use them\n",
+        "\n",
+        "# Dictionaries use curly braces insted of square brackets\n",
+        "# A dictionary holds 2 elements. The first one is called the key and the second one is called the value\n",
+        "         \n",
+        "myDictionary = {\"Banana\":10,\"Orange\":6}\n",
+        "          #\"Key: Banana\"   # \"Key: Orange\"\n",
+        "          #\"Value: 10\"     # \"Value: 10\"\n",
+        "    \n",
+        "# Lets try to add more stuff to our Dictionary\n",
+        "myDictionary[\"Pear\"] = 62\n",
+        "\n",
+        "# Lets try to edit an existing Key in our Dictionary\n",
+        "myDictionary[\"Banana\"] = 16\n",
+        "\n",
+        "# This is how we can delete keys from a Dictionary\n",
+        "del myDictionary[\"Pear\"]\n",
+        "\n",
+        "print(myDictionary)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'Banana': 16, 'Orange': 6}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "e-IkCeCBX5Fr",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h3>Example 6 (Tuples):</h3>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "T9tOykcOYBYa",
+        "colab_type": "code",
+        "outputId": "06110a70-7661-43c9-ace7-cb97b50ca42c",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 52
+        }
+      },
+      "source": [
+        "# Tuples and how to use them\n",
+        "\n",
+        "# Creating a tuple is as simple as creating Lists or Dictionaries\n",
+        "\n",
+        "myTuple = (\"Hello\",\"Tuple\",2020)\n",
+        "myTuple2 = (\"Hey\",\"This is\",\"a good \",\"tuple\")\n",
+        "myDelTuple = (\"Delete me please\")\n",
+        "# Use the square brackets for slicing to access values in tuple\n",
+        "\n",
+        "print(\"First element of the tuple is:\", myTuple[0])   #uses indexing to print out the first element of myTuple\n",
+        "\n",
+        "# Tuple + Tuple \n",
+        "myTuple3 = myTuple + myTuple2\n",
+        "print(\"the sum of the first tuple and the second one is:\", myTuple3)  #This simply creates a new tuple by adding myTuple and myTuple2\n",
+        "\n",
+        "# We can't delete elements of a tuple, but we can delete the tuple itself using the del statement\n",
+        "del myDelTuple"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "First element of the tuple is: Hello\n",
+            "the sum fo the first tuple and the second one is: ('Hello', 'Tuple', 2020, 'Hey', 'This is', 'a good ', 'tuple')\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "gh4DM_w6YvaS",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h3>Example 7 (While Loops):</h3>\n",
+        "\n",
+        "A Loop is used to execute a statement repeatedly until a given condition is met.\n",
+        "Think of a loop like this: You go to school everyday until break starts. Each day you go to school, the loop executes and increases the total number of days by 1, until it hits break, where the program exits the loop and stops counting. \n",
+        "\n",
+        "Python provides multiple ways of executing loops, but they have the same basic functionality. The first type of loop we will be discussing is a while loop.\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "cqySCW2raJ4j",
+        "colab_type": "code",
+        "outputId": "a4b99ae6-b9e7-4a9d-ef30-34cef9b2aa24",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 228
+        }
+      },
+      "source": [
+        "# While Loops and how to use them\n",
+        "\n",
+        "# This is the basic format of a while loop\n",
+        "# While condition is met: \n",
+        "    # execute these statements \n",
+        "\n",
+        "#Example\n",
+        "myCount = 0\n",
+        "while myCount<10:\n",
+        "  myCount+=1\n",
+        "  print(myCount)\n",
+        "\n",
+        "# First, we set a variable called myCount equal to Zero.\n",
+        "# While myCount is less then 10 the program executes through the inside of the while statement  \n",
+        "# The inside of the while statment adds 1 to the current value of myCount which is 0\n",
+        "# (myCount +=1 ) is the same as (myCount = myCount + 1)\n",
+        "# After myCount becomes 1, it is printed, and then goes back inside the while statement. Since myCount is still less than 10, the while statement executes again. \n",
+        "# When myCount is 9, it goes through the while statement is increased by 1, and 10 is printed out. Since the value of myCount is now equal to 10, the while statement stops executing.\n",
+        "   \n",
+        "\n",
+        "\n",
+        "# Note that if you have your print function outside the while statement like below(no indent), it will print only the final value of myCount after executing through the while statement. \n",
+        "print(f\"----------\\n{myCount}\")"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n",
+            "----------\n",
+            "10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "jArQUF8wcZKn",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h3>Example 7 (For Loops):</h3>\n",
+        "\n",
+        "For Loops are similar to while loops but have a different structure. They are used when you know how many times you want the code within the loop to be executed. (fixed number of repeats). Loops can also be used with lists, as we will explore below."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vgggX5ajcxZ-",
+        "colab_type": "code",
+        "outputId": "a3ae466a-5cd1-4e17-8f53-b111dde39cc5",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 87
+        }
+      },
+      "source": [
+        "# For Loops and how to use them\n",
+        "\n",
+        "# Example 1 (Part 1)\n",
+        "# In this example we will be using a list, and create a new list with each element increased by 1.\n",
+        "# Here is a list of 10 elements\n",
+        "myTestingList = [1,2,3,4,5,6,7,8,9,10]\n",
+        "# Then we create a new empty list\n",
+        "newTest = []\n",
+        "# For each number in the list do the following\n",
+        "for number in myTestingList:\n",
+        "# Adds 1 to each number in the list and appends (Python term for adding ) this as an element into the new list\n",
+        "    number+=1\n",
+        "    newTest.append(number)\n",
+        "\n",
+        "# Prints the new list      \n",
+        "print(newTest)   \n",
+        "\n",
+        "\n",
+        "# Example 1 (Part 2)\n",
+        "# There is also another method to increase each element by 1 in a much more concise format.\n",
+        "print([i+1 for i in [1,2,3,4,5,6,7,8,9,10]])\n",
+        "# This method does not store the output list into a variable, only prints it.\n",
+        "\n",
+        "# Example 2  \n",
+        "# We can create a new list by creating an empty list and appending (Python term for adding) the new values to the list \n",
+        "# Let's take a look at an example\n",
+        "myListA = [10,20,30,40,50,60,70,80,90,100]\n",
+        "# Our empty list\n",
+        "myListB = []\n",
+        "for nums in myListA:\n",
+        "    nums *= 5\n",
+        "# Adding new values that got multiplied by 5 to the new empty list    \n",
+        "    myListB.append(nums)\n",
+        "print(myListA)   \n",
+        "print(myListB)"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]\n",
+            "[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]\n",
+            "[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]\n",
+            "[50, 100, 150, 200, 250, 300, 350, 400, 450, 500]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "--RVRr-aevRL",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h3>Example 8 (Conditional Statements):</h3>\n",
+        "\n",
+        "Conditional Statements use if, else, and elif statements. Let's take a look at some examples to understand their functionality."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-DYojgsWfzfY",
+        "colab_type": "code",
+        "outputId": "e1023ab6-a584-472e-9ec6-981ff5d07f83",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 52
+        }
+      },
+      "source": [
+        "# Conditionals examples\n",
+        "\n",
+        "# Python supports these usual logical conditions from mathematics, and we wilbe using them for the examples:\n",
+        "# Equal to ==\n",
+        "# Not equal to =!\n",
+        "# Less then <\n",
+        "# Greater then >\n",
+        "# Less then or equal to <=\n",
+        "# Greater then or equal to >=\n",
+        "\n",
+        "# General If statement structure\n",
+        "# if expression:\n",
+        "#    statement(s)\n",
+        "# else:\n",
+        "#   statement(s)\n",
+        "\n",
+        "#Example 1\n",
+        "\n",
+        "# Creating  a Variable that holds value of 10\n",
+        "Check_me = 10\n",
+        "\n",
+        "# Checking if the variable is equal to 10:\n",
+        "if Check_me == 10:\n",
+        "# Printing Correct if the condition is True    \n",
+        "    print(\"Correct\")\n",
+        "# If the  conditions is not true, then try this condition    \n",
+        "elif Check_me > 11:\n",
+        "    print(\"you did it right\")\n",
+        "# If all the othe conditions are false, go through the else statement and print Wrong    \n",
+        "else:\n",
+        "    print(\"Wrong\")\n",
+        "\n",
+        "#Example 2\n",
+        "\n",
+        "# Comparing the values of 2 variables\n",
+        "aa = 12\n",
+        "bb = 16\n",
+        "\n",
+        "if aa == bb:\n",
+        "    print(\"aa is equal to bb\")\n",
+        "elif aa >= bb:\n",
+        "    print(\"aa is greather or equal to bb\")\n",
+        "else:\n",
+        "    print(\"I guess that bb is greather then aa\")"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Correct\n",
+            "I guess that bb is greather then aa\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Kz6-4O1AjOTD",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h3>Example 9 (Enumerate with Lists):</h3>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Ox_ojineghsD",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "8c42992d-726e-421e-d8d7-e4b2056f07f1"
+      },
+      "source": [
+        "#Enumerate with lists and how it works\n",
+        "\n",
+        "#Let's create two lists\n",
+        "mylist1 = [1,2,3,4,5]\n",
+        "mylist2 = [2,4,6,8,10]\n",
+        "\n",
+        "#Now let's say we want to find the dot product of the two lists. The dot product is the (1*2) + (2*4) + (3*6) +(4*8) + (5*10). \n",
+        "#We have to set a variable named resultOfDotProduct as 0 first, and this will go through the for loop and eventally get the value of the result of the dot product.\n",
+        "#Though this seems complicated at first, let's look at how enumerate simplifies this problem.\n",
+        "resultOfDotProduct = 0\n",
+        "\n",
+        "for i,elem in enumerate(mylist1):\n",
+        "  resultOfDotProduct+= elem*mylist2[i]\n",
+        "print(resultOfDotProduct)\n",
+        "\n",
+        "#In this scenario, enumerate is essentially creating an index, and coordinate pair for the first list [(0,1),(1,2),(2,3),(3,4),(4,5)] \n",
+        "#Then, it is multiplying elements in the first list by the corresponding elements in listTwo, and we know they correspond because of the i"
+      ],
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "110\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
